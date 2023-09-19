@@ -15,6 +15,12 @@ def sacar():
     saque_cliente = float(input(">> "))
     banco.sacar(conta_cliente, saque_cliente)
 
+def depositar():
+    print("Digite sua conta e a quantidade")
+    conta_cliente = str(input(">> "))
+    deposito_cliente = float(input(">> "))
+    banco.depositar(conta_cliente, deposito_cliente)
+
 
 
 
@@ -22,6 +28,8 @@ def main():
 
     x = True
     while x == True:
+            
+        try:
 
             print("Bem vindo ao banco, o que desesa fazer? \n [1] Cria conta \n [2] Saque \n [3] Depositar \n [4] Transferir \n [5] Verificar saldo \n [6] Sair")
             escolha1 = int(input(">> "))
@@ -32,7 +40,7 @@ def main():
                 case 2:
                     sacar()
                 case 3:
-                    pass
+                    depositar()
                 case 4:
                     pass
                 case 5:
@@ -42,3 +50,6 @@ def main():
                     break
                 case _:
                     print("O valor não está disponível")
+
+        except Exception as erro:
+            ("Opção inválida")

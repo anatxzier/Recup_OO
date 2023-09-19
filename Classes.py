@@ -24,14 +24,22 @@ class Banco:
         self.conta = conta
         self.valor = valor
 
-        for conta in self.cliente and valor < self.saldo in self.cliente[self.nome] == [self.saldo]:
+        for conta in self.cliente and valor in self.cliente[self.nome] == [self.saldo]:
             self.saldo = self.saldo + valor
+            print ("Operação realizada")
 
 
 
     def transferir(self, origem, destino, valor):
-        if self.saldo in origem > valor:
-            destino += valor and origem - valor
+        self.origem = origem
+        self.destino = destino
+        self.valor = valor
+
+        for origem in self.clientes and valor in self.cliente[self.nome] == [self.saldo]:
+            for destino in self.clientes and valor in self.cliente[self.nome] == [self.saldo]:
+                valor = self.saldo + self.saldo 
+                #ess aq nn sei nn eu acho
+                
 
     def listar(self):
         for chave, valor in self.cliente.items():
